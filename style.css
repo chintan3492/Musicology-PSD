@@ -1,0 +1,984 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+a {
+    color: #fff;
+}
+
+/* HEADER */
+.main_header {
+    background-color: #303030;
+}
+
+.container {
+    width: 100%;
+    padding: 0px 80px;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .nav {
+    display: flex;
+    gap: 56px;
+
+}
+
+header .nav li {
+    list-style-type: none;
+}
+
+header .nav li a {
+    text-decoration: none;
+    font-size: 25px;
+
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* SLIDER */
+.fa-arrow-left {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    left: 25px;
+    cursor: pointer;
+}
+
+.fa-arrow-right {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    right: 25px;
+    cursor: pointer;
+}
+
+/* .slick-prev {
+    left: 25px;
+    z-index: 1;
+} 
+
+.slick-next {
+    right: 25px;
+}*/
+
+
+.slider-img {
+    display: flex;
+}
+
+.slider-img img {
+    width: 100%;
+}
+
+.main-slider {
+    position: relative;
+
+}
+
+.slider {
+    position: absolute;
+    /* top: 74%; */
+    bottom: 80px;
+    width: 800px;
+    /* transform: translate(0, -50%); */
+}
+
+
+
+.slider-desc h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+    font-size: 125px;
+    font-weight: 400;
+
+}
+
+.slider-desc p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0px 0px 30px 0px;
+
+}
+
+.register {
+
+    text-transform: uppercase;
+    background-color: #e8631c;
+    font-size: 29px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 81px;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+
+/* DANCE TOUR */
+.dancetour-main {
+    background-image: url("./img/card-backimage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.dancetour h2 {
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 100px 0 65px 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+.dancetour p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 82px;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 100px;
+}
+
+.card img {
+    background-color: #303030;
+    width: 100%;
+}
+
+.card {
+    display: block;
+    background-color: #303030;
+    width: 33.33%;
+}
+
+.card h5 {
+    font-size: 37px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0 0 0;
+}
+
+.card p {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 20px 0 30px 0;
+}
+
+/* PRICING */
+.main-price-tag {
+    background-image: url("./img/pricing-backimage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+
+.pricing h2 {
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 74px 0px 50px 0px;
+}
+
+.pricing p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.price-tag {
+    display: block;
+    background-color: #e8631c;
+    border-radius: 8px;
+    text-align: center;
+    padding: 35px 0px;
+}
+
+
+.price-tag a {
+    background-color: #303030;
+    padding: 12px 120px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    border-radius: 4px;
+
+}
+
+.price-tag img {
+    width: auto;
+    background-color: #e8631c;
+}
+
+.price-tag h5 {
+    text-transform: uppercase;
+    font-size: 37px;
+    font-weight: 600;
+
+}
+
+.price-tag p {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+
+}
+
+/* AMAZING DANCE */
+.amazing-dance {
+    background-image: url("./img/orange-right.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.dance-left,
+.dance-right {
+    width: 50%;
+
+}
+
+.dance-right {
+    padding: 325px 0px 100px 55px;
+    margin: 0 auto;
+}
+
+.dance-right h2 {
+    text-transform: uppercase;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.dance-right p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 75px;
+    width: 625px;
+
+}
+
+.dance-right a {
+    text-transform: uppercase;
+    background-color: #303030;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 15px 110px;
+
+}
+
+/* BEST DANCE */
+.best-dance {
+    background-image: url("./img/orange-left.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.dance-text,
+.dance-img {
+    width: 50%;
+}
+
+.dance-text {
+    padding: 340px 130px 0px 80px;
+}
+
+.dance-text h2 {
+    text-transform: uppercase;
+    font-size: 75px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    padding-bottom: 60px;
+}
+
+.dance-text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    padding-bottom: 75px;
+    width: 625px;
+
+}
+
+.dance-text a {
+    text-transform: uppercase;
+    background-color: #303030;
+    font-size: 29px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 11px 81px;
+    border-radius: 4px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+
+}
+
+/* OUR STATISTICS */
+.main-stats {
+    background-color: #303030;
+
+}
+
+.stats h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 75px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 66px;
+}
+
+.stats p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.stats .p_stats {
+    padding-bottom: 199px;
+}
+
+.stats-cards {
+    display: flex;
+    gap: 82px;
+    justify-content: center;
+    padding-top: 85px;
+    padding-bottom: 272px;
+
+}
+
+.stats-card {
+    display: block;
+    width: 33.33%;
+    text-align: center;
+}
+
+.stats-card h5 {
+    font-size: 67px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+
+/* HERBERT SIMON */
+.main-simon {
+    background-image: url("./img/herbert-simon.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.simon {
+    padding: 347px 188px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.simon p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 78px;
+}
+
+.simon h2 {
+    font-size: 58px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* SUBSCRIBE */
+.main-subscribe {
+    background-image: url("./img/subscribe-back-img.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 110px 0;
+
+}
+
+.main-subscribe form {
+    display: flex;
+    justify-content: center;
+}
+
+.subscribe {
+    padding-bottom: 60px;
+
+}
+
+.subscribe h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 66px;
+}
+
+.subscribe p {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+/* .email {
+    margin: 0px;
+    padding: 10px;
+} */
+
+.submit {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    padding: 10px 36px;
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    font-size: 25px;
+}
+
+.main-subscribe form #email {
+    font-size: 25px;
+    padding: 16px 30px;
+    width: 552px;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* FOOTER */
+/* FOOTER-LEFT */
+.main-footer {
+    background-color: #000000;
+}
+
+footer {
+    display: flex;
+    gap: 130px;
+    padding: 90px 0px;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+
+.footer-left h5 {
+    font-size: 33px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer-left p {
+
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 30px 0px;
+
+}
+
+.footer-left .media_icon {
+    display: flex;
+    gap: 17px;
+}
+
+/* FOOTER-RIGHT */
+.footer-right h5 {
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding-bottom: 38px;
+    text-transform: uppercase;
+}
+
+.footer-right {
+    display: flex;
+    gap: 54px;
+    text-transform: capitalize;
+    width: 60%;
+}
+
+.footer-right .section li a {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.footer-right .section li {
+    padding-bottom: 15px;
+    list-style-type: none;
+
+}
+
+
+
+/* MEDIA QUERY */
+/* 1024 SCREEN */
+@media only screen and (min-width: 1024px) {}
+
+/* 1366 SCREEN */
+@media only screen and (min-width: 1366px) {
+
+    /* HEADER */
+    header .nav {
+        gap: 50px;
+    }
+
+    /*
+    header .nav li a {
+        font-size: 25px;
+    } */
+
+    /* SLIDER */
+    .slider-desc h2 {
+        font-size: 110px;
+    }
+
+    .slider-desc p {
+        font-size: 28px;
+        padding: 0px 0px 25px 0px;
+    }
+
+    .register {
+        font-size: 25px;
+        padding: 11px 79px;
+    }
+
+    /* DANCE TOUR */
+    .dancetour h2 {
+        font-size: 72px;
+        padding: 85px 0 45px 0;
+    }
+
+    .dancetour p {
+        font-size: 26px;
+    }
+
+    /* CARDS */
+    .cards {
+        gap: 70px;
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .card h5 {
+        font-size: 30px;
+        padding: 25px 0 0 0;
+    }
+
+    .card p {
+        font-size: 20px;
+        padding: 18px 0 25px 0;
+    }
+
+    /* PRICING */
+    .pricing h2 {
+        font-size: 70px;
+        padding: 68px 0px 45px 0px;
+    }
+
+    .pricing p {
+        font-size: 26px;
+    }
+
+    .price-tag {
+        padding: 30px 0px;
+    }
+
+    .price-tag h5 {
+        font-size: 32px;
+    }
+
+    .price-tag p {
+        font-size: 20px;
+    }
+
+    .price-tag a {
+        padding: 10px 110px;
+        font-size: 22px;
+    }
+
+    /* AMAZING DANCE */
+    .dance-right h2 {
+        font-size: 70px;
+        padding-bottom: 50px;
+    }
+
+    .dance-right p {
+        font-size: 26px;
+        padding-bottom: 65px;
+    }
+
+    .dance-right a {
+        font-size: 25px;
+        padding: 12px 100px;
+    }
+
+    /* BEST DANCE */
+    .dance-text h2 {
+        font-size: 70px;
+        padding-bottom: 50px;
+    }
+
+    .dance-text p {
+        font-size: 22px;
+        padding-bottom: 60px;
+        width: 555px;
+
+    }
+
+    .dance-text a {
+        font-size: 22px;
+        padding: 9px 75px;
+    }
+
+    /* OUR STATISTICS */
+    .stats h2 {
+        font-size: 68px;
+        padding-top: 175px;
+        padding-bottom: 66px;
+    }
+
+    .stats p {
+        font-size: 26px;
+    }
+
+    .stats-cards {
+        gap: 75px;
+        padding-top: 65px;
+        padding-bottom: 230px;
+    }
+
+    .stats-card h5 {
+        font-size: 60px;
+    }
+
+    .stats .p_stats {
+        padding-bottom: 180px;
+    }
+
+    /* HERBERT SIMON */
+    .simon p {
+        font-size: 45px;
+        padding-bottom: 65px;
+    }
+
+    .simon h2 {
+        font-size: 52px;
+    }
+
+    /* SUBSCRIBE */
+    .subscribe h2 {
+        font-size: 70px;
+        padding-bottom: 60px;
+    }
+
+    .subscribe p {
+        font-size: 27px;
+    }
+
+    .main-subscribe form #email {
+        font-size: 19px;
+        padding: 13px 21px;
+    }
+
+    .submit {
+        padding: 9px 34px;
+        font-size: 22px;
+    }
+
+    /* FOOTER */
+    /* FOOTER-LEFT */
+    .footer-left h5 {
+        font-size: 30px;
+
+    }
+
+    .footer-left p {
+        font-size: 22px;
+        padding: 26px 0px;
+
+    }
+
+    .footer-left .media_icon {
+        gap: 14px;
+    }
+
+    /* FOOTER-RIGHT */
+    .footer-right h5 {
+        font-size: 30px;
+        padding-bottom: 35px;
+    }
+
+    .footer-right {
+        gap: 50px;
+    }
+
+
+}
+
+/* 1440 SCREEN */
+@media only screen and (min-width: 1440px) {
+
+    /* HEADER */
+    header .nav {
+        gap: 56px;
+    }
+
+    header .nav li a {
+        font-size: 25px;
+    }
+
+    /* SLIDER */
+    .slider-desc h2 {
+        font-size: 125px;
+    }
+
+    .slider-desc p {
+        font-size: 30px;
+        padding: 0px 0px 30px 0px;
+    }
+
+    .register {
+        font-size: 29px;
+        padding: 11px 81px;
+        border-radius: 4px;
+    }
+
+    /* DANCE TOUR */
+    .dancetour h2 {
+        font-size: 75px;
+        padding: 100px 0 65px 0;
+    }
+
+    .dancetour p {
+        font-size: 30px;
+    }
+
+    /* CARDS */
+    .cards {
+        gap: 82px;
+        padding-top: 85px;
+        padding-bottom: 100px;
+    }
+
+    .card h5 {
+        font-size: 37px;
+        padding: 30px 0 0 0;
+    }
+
+    .card p {
+        font-size: 22px;
+        padding: 20px 0 30px 0;
+    }
+
+    /* PRICING */
+    .pricing h2 {
+        font-size: 75px;
+        padding: 74px 0px 50px 0px;
+    }
+
+    .pricing p {
+        font-size: 30px;
+    }
+
+    .price-tag {
+        display: block;
+        border-radius: 8px;
+        padding: 35px 0px;
+    }
+
+    .price-tag a {
+        padding: 12px 120px;
+        font-size: 25px;
+    }
+
+    .price-tag h5 {
+        font-size: 37px;
+    }
+
+    .price-tag p {
+        font-size: 22px;
+    }
+
+    /* AMAZING DANCE */
+    .dance-right h2 {
+        font-size: 75px;
+        padding-bottom: 60px;
+    }
+
+    .dance-right p {
+        font-size: 30px;
+        padding-bottom: 75px;
+        width: 625px;
+    }
+
+    .dance-right a {
+        font-size: 30px;
+        padding: 15px 110px;
+    }
+
+    /* BEST DANCE */
+    .dance-text h2 {
+        font-size: 75px;
+        padding-bottom: 60px;
+    }
+
+    .dance-text p {
+        font-size: 30px;
+        padding-bottom: 75px;
+        width: 625px;
+    }
+
+    .dance-text a {
+        font-size: 29px;
+        padding: 11px 81px;
+    }
+
+    /* OUR STATISTICS */
+    .stats h2 {
+        font-size: 75px;
+        padding-top: 200px;
+        padding-bottom: 66px;
+    }
+
+    .stats p {
+        font-size: 30px;
+    }
+
+    .stats-cards {
+        gap: 82px;
+        padding-top: 85px;
+        padding-bottom: 272px;
+    }
+
+    .stats-card h5 {
+        font-size: 67px;
+    }
+
+    .stats .p_stats {
+        padding-bottom: 199px;
+    }
+
+    /* HERBERT SIMON */
+    .simon p {
+        font-size: 50px;
+        padding-bottom: 78px;
+    }
+
+    .simon h2 {
+        font-size: 58px;
+    }
+
+    /* SUBSCRIBE */
+    .subscribe {
+        padding-bottom: 60px;
+
+    }
+
+    .subscribe h2 {
+        font-size: 75px;
+        padding-bottom: 66px;
+    }
+
+    .subscribe p {
+        font-size: 30px;
+    }
+
+    .submit {
+        padding: 10px 36px;
+        font-size: 25px;
+    }
+
+    .main-subscribe form #email {
+        font-size: 25px;
+        padding: 16px 30px;
+    }
+
+    /* FOOTER */
+    /* FOOTER-LEFT */
+    footer {
+
+        gap: 130px;
+        padding: 90px 0px;
+    }
+
+    .footer-left h5 {
+        font-size: 33px;
+
+    }
+
+    .footer-left p {
+        font-size: 25px;
+        padding: 30px 0px;
+
+    }
+
+    .footer-left .media_icon {
+        gap: 17px;
+    }
+
+    /* FOOTER-RIGHT */
+    .footer-right h5 {
+        font-size: 32px;
+        padding-bottom: 38px;
+    }
+
+    .footer-right {
+        gap: 54px;
+    }
+
+    .footer-right .section li a {
+        font-size: 25px;
+    }
+
+    .footer-right .section li {
+        padding-bottom: 15px;
+    }
+}
